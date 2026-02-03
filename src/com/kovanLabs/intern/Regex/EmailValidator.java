@@ -25,7 +25,6 @@ public class EmailValidator {
                 "user@domain.c",
                 "user@domain#com"
         };
-
         for (String email:emails) {
             System.out.println(email + " ->" + email.matches(regex));
         }
