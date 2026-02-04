@@ -26,8 +26,7 @@ final class Employee {
     }
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', salary=" + salary +
-                ", joinDate=" + joinDate + "}";
+        return "Employee{id=" + id + ", name='" + name + "', salary=" + salary + ", joinDate=" + joinDate + "}";
     }
 }
 public class ImmutableClass {
@@ -37,6 +36,5 @@ public class ImmutableClass {
         System.out.println(emp);
         date.setTime(0);
         emp.getJoinDate().setTime(0);
-
     }
 }
