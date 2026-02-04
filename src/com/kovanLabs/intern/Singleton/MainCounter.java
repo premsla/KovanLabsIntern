@@ -9,9 +9,9 @@ class ObjectCounter {
         return count;
     }
 }
-
 public class MainCounter {
     public static void main(String[] args) {
+        new ObjectCounter();
         new ObjectCounter();
         new ObjectCounter();
         new ObjectCounter();
