@@ -7,7 +7,7 @@ class AppConfig {
     }
     public static AppConfig getInstance() {
         if (instance == null) {
-            instance = new AppConfig();  // Lazy initialization
+            instance = new AppConfig();
         }
         return instance;
     }
