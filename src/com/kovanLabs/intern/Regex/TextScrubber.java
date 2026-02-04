@@ -6,5 +6,6 @@ public class TextScrubber {
         String result = step1.replaceAll("[\\p{Punct}]", "");
         System.out.println("Original Text : " + input);
         System.out.println("Scrubbed Text : " + result);
+
     }
 }
