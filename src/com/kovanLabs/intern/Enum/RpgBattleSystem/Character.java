@@ -1,7 +1,6 @@
 package com.kovanLabs.intern.Enum.RpgBattleSystem;
 
 import java.util.Random;
-
 abstract class Character {
     protected String name;
     protected int health;
@@ -14,10 +13,8 @@ abstract class Character {
         this.strength = strength;
     }
 
-    // Abstract attack method (Polymorphism)
     public abstract void attack(Character opponent);
 
-    // Common method to take damage
     public void takeDamage(int damage) {
         health -= damage;
         if (health < 0) health = 0;

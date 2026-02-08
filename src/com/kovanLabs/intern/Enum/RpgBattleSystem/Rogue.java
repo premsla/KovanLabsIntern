@@ -5,7 +5,6 @@ class Rogue extends Character {
     public Rogue(String name) {
         super(name, 100, 18);
     }
-
     @Override
     public void attack(Character opponent) {
         int damage = strength + random.nextInt(8);
@@ -13,7 +12,7 @@ class Rogue extends Character {
         opponent.takeDamage(damage);
     }
 
-    // Dodge ability
+
     @Override
     public void takeDamage(int damage) {
         int dodgeChance = random.nextInt(100);

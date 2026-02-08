@@ -3,7 +3,7 @@ package com.kovanLabs.intern.Enum.RpgBattleSystem;
 class Mage extends Character {
 
     public Mage(String name) {
-        super(name, 80, 30); // Low health, high damage
+        super(name, 80, 30);
     }
 
     @Override
