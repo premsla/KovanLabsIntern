@@ -31,6 +31,3 @@ public class MultipleInterface implements camera,MusicPlayer,Phone{
         System.out.println("Making a call");
     }
 }
-
-
-
