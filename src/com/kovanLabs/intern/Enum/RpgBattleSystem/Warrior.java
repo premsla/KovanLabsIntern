@@ -1,7 +1,5 @@
 package com.kovanLabs.intern.Enum.RpgBattleSystem;
-
 class Warrior extends Character {
-
     public Warrior(String name) {
         super(name, 150, 20); // High health
     }

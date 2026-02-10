@@ -1,11 +1,8 @@
 package com.kovanLabs.intern.Enum.RpgBattleSystem;
-
 class Mage extends Character {
-
     public Mage(String name) {
         super(name, 80, 30);
     }
-
     @Override
     public void attack(Character opponent) {
         int damage = strength + random.nextInt(20);
@@ -13,4 +10,3 @@ class Mage extends Character {
         opponent.takeDamage(damage);
     }
 }
-

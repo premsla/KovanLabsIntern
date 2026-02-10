@@ -1,7 +1,5 @@
 package com.kovanLabs.intern.Enum.RpgBattleSystem;
-
 class Rogue extends Character {
-
     public Rogue(String name) {
         super(name, 100, 18);
     }
@@ -11,8 +9,6 @@ class Rogue extends Character {
         System.out.println(name + " (Rogue) strikes!");
         opponent.takeDamage(damage);
     }
-
-
     @Override
     public void takeDamage(int damage) {
         int dodgeChance = random.nextInt(100);
