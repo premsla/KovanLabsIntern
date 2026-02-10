@@ -1,4 +1,4 @@
-package com.kovanLabs.intern.Regex;
+package com.kovanLabs.intern.cryptography;
 public class Enigma {
     private String xorTransform(String input, int key) {
         char[] chars = input.toCharArray();
