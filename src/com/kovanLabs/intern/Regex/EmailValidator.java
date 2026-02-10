@@ -1,7 +1,7 @@
 package com.kovanLabs.intern.Regex;
 public class EmailValidator {
     public static void main(String[] args) {
-        String regex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}$";
+        String regex = "^(?!\\.)(?!.*\\.\\.)[a-zA-Z0-9._%+-]+(?<!\\.)@[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}$";
         String[] emails = {
                 "user@gmail.com",
                 "test.user@yahoo.com",
