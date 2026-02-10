@@ -1,18 +1,17 @@
 package com.kovanLabs.intern.Regex;
 public class Enigma {
-    public String encrypt(String message, int key) {
-        char[] chars = message.toCharArray();
+    private String xorTransform(String input, int key) {
+        char[] chars = input.toCharArray();
         for (int i = 0; i < chars.length; i++) {
-            chars[i] = (char)(chars[i] ^ key);
+            chars[i] = (char) (chars[i] ^ key);
         }
         return new String(chars);
     }
+    public String encrypt(String message, int key) {
+        return xorTransform(message, key);
+    }
     public String decrypt(String cipher, int key) {
-        char[] chars = cipher.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            chars[i] = (char)(chars[i] ^ key);
-        }
-        return new String(chars);
+        return xorTransform(cipher, key);
     }
     public static void main(String[] args) {
         Enigma enigma = new Enigma();
