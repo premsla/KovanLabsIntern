@@ -1,12 +1,14 @@
 package com.kovanLabs.intern.Singleton;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 class ObjectCounter {
-    private static int count = 0;
+    private static final AtomicInteger count = new AtomicInteger(0);
     public ObjectCounter() {
-        count++;
+        count.incrementAndGet();
     }
     public static int getCount() {
-        return count;
+        return count.get();
     }
 }
 public class MainCounter {

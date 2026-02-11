@@ -1,4 +1,4 @@
-package com.kovanLabs.intern.Regex;
+package com.kovanLabs.intern.StringManipulation;
 public class StringProblems {
     public static void main(String[] args) {
         StringBuffer sb = new StringBuffer("Java");
