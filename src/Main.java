@@ -1,15 +1,37 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import com.kovanLabs.intern.exceptionhandling.FileProcesser;
+import com.kovanLabs.intern.exceptionhandling.Resource;
+import com.kovanLabs.intern.exceptionhandling.*;
+import com.kovanLabs.intern.stream;
+import java.util.IntSummaryStatistics;
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Day-13
+            try(Resource r=new Resource()) {
+                r.divide();
+            }
+//        Resource r=new Resource();
+//        r.divide();
+        FileProcesser fp=new FileProcesser();
+            try {
+                fp.processFile("data.txt");
+            }catch (DataProcessingException e){
+                System.out.println(e.getMessage());
+            }
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+      // Stream day-14
+        List<Integer> number=new Random()
+                .ints(100,0,1000)
+                .boxed()
+                .collect(Collectors.toList());
+            IntSummaryStatistics stats= stream.calculate(number);
+        System.out.println("Count : " + stats.getCount());
+        System.out.println("Sum : " + stats.getSum());
+        System.out.println("Average : " + stats.getAverage());
+        System.out.println("Min : " + stats.getMin());
+        System.out.println("Max : " + stats.getMax());
     }
 }
