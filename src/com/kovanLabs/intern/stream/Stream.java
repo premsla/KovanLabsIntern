@@ -1,13 +1,11 @@
-package com.kovanLabs.intern;
+package com.kovanLabs.intern.stream;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class stream {
+public class Stream {
     public static IntSummaryStatistics calculate(List<Integer> number) {
         return number.stream()
                 .mapToInt(Integer::intValue)
                 .summaryStatistics();
     }
 }
-
