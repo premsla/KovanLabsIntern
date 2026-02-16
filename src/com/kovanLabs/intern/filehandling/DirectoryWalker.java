@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 public class DirectoryWalker {
     public static void main(String[] args) {
-        Path startPath = Paths.get("C:\\Users\\Asus\\IdeaProjects\\KovanLabsIntern\\src\\com\\kovanLabs\\intern"); // change your folder
+        Path startPath = Paths.get("C:\\Users\\Asus\\IdeaProjects\\KovanLabsIntern\\src\\com\\kovanLabs\\intern");
         try (Stream<Path> paths = Files.walk(startPath)) {
             paths
                     .filter(Files::isRegularFile)
