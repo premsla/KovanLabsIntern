@@ -4,10 +4,18 @@ import java.util.List;
 
 
 public class WildCard {
-    private static int sum(List<? extends Number> list){
-        int sum=0;
-        for(Number num:list){
-            sum+=num.intValue();
+
+    public void printList(List<?> list) {
+        int sum = 0;
+        for (Object num : list) {
+            System.out.println(num);
+        }
+    }
+
+    public static int sum(List<? extends Number> list) {
+        int sum = 0;
+        for (Number num : list) {
+            sum += num.intValue();
         }
         return sum;
     }
