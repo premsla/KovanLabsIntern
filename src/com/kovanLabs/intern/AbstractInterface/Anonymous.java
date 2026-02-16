@@ -10,5 +10,3 @@ class CoreSystem{
         }
     }
 }
-public class Anonymous {
-}

@@ -6,6 +6,7 @@ interface camera{
     void takePhoto();
 }
 interface MusicPlayer{
+
     void start();
     void playMusic();
 }

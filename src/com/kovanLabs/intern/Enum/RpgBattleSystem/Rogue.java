@@ -1,5 +1,5 @@
 package com.kovanLabs.intern.Enum.RpgBattleSystem;
-class Rogue extends Character {
+public class Rogue extends Character {
     public Rogue(String name) {
         super(name, 100, 18);
     }

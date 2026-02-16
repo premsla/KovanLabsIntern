@@ -1,11 +1,11 @@
 package com.kovanLabs.intern.Enum;
+
 enum OrderState {
     NEW,
     PROCESSING,
     SHIPPED,
     DELIVERED;
 
-    // Method to check valid transition
     public boolean canTransitionTo(OrderState next) {
         switch (this) {
             case NEW:
@@ -15,7 +15,7 @@ enum OrderState {
             case SHIPPED:
                 return next == DELIVERED;
             case DELIVERED:
-                return false; // final state
+                return false;
             default:
                 return false;
         }
@@ -43,15 +43,4 @@ class Order {
     }
 }
 
-public class OrderTest {
-    public static void main(String[] args) {
-        Order order = new Order();
-
-        order.updateState(OrderState.SHIPPED);      // Invalid
-        order.updateState(OrderState.PROCESSING);   // Valid
-        order.updateState(OrderState.DELIVERED);    // Invalid
-        order.updateState(OrderState.SHIPPED);      // Valid
-        order.updateState(OrderState.DELIVERED);    // Valid
-    }
-}
 

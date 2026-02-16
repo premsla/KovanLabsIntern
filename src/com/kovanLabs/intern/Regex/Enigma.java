@@ -1,4 +1,5 @@
 package com.kovanLabs.intern.cryptography;
+
 public class Enigma {
     private String xorTransform(String input, int key) {
         char[] chars = input.toCharArray();
@@ -7,12 +8,15 @@ public class Enigma {
         }
         return new String(chars);
     }
+
     public String encrypt(String message, int key) {
         return xorTransform(message, key);
     }
+
     public String decrypt(String cipher, int key) {
         return xorTransform(cipher, key);
     }
+
     public static void main(String[] args) {
         Enigma enigma = new Enigma();
         String message = "HelloWorld";
