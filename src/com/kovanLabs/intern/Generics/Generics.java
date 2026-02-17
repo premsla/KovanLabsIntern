@@ -1,9 +1,7 @@
 package com.kovanLabs.intern.Generics;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Stack;
 
 import static com.kovanLabs.intern.Generics.WildCard.sum;
 
