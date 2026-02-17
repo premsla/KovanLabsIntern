@@ -6,7 +6,7 @@ import java.util.List;
 public class WildCard {
 
     public void printList(List<?> list) {
-        int sum = 0;
+ 
         for (Object num : list) {
             System.out.println(num);
         }
