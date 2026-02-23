@@ -13,7 +13,7 @@ class AppConfig {
             synchronized (AppConfig.class) {
                 result = instance;
                 if (result == null) {
-                    result = new AppConfig();  // Lazy initialization with thread safety
+                    result = new AppConfig();
                     instance = result;
                 }
             }
