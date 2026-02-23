@@ -10,7 +10,7 @@ public class Exercise {
         System.out.println(System.identityHashCode(s1));
         System.out.println(System.identityHashCode(s2));
         System.out.println(System.identityHashCode(s3));
-        System.out.println(System.identityHashCode(s3));
+        
         byte b = 127;
         for (int i = 0; i < 5; i++) {
             b++;

@@ -14,7 +14,7 @@ public class ArraysLinkedList {
             list.add(i);
         }
         long startArray = System.nanoTime();
-        int val1 = list.get(middleIndex);
+       
         long endArray = System.nanoTime();
         long totaltime = endArray - startArray;
         System.out.println("Totaltime taken to get element in an array " + totaltime);
@@ -23,7 +23,7 @@ public class ArraysLinkedList {
             list1.add(i);
         }
         long StartList = System.nanoTime();
-        long Va12 = list1.get(middleIndex);
+        long va12 = list1.get(middleIndex);
         long endList = System.nanoTime();
         long totaltimelist = endList - StartList;
         System.out.println("Totaltime taken to get element in an LinkedList " + totaltimelist);

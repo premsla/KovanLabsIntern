@@ -9,7 +9,7 @@ public class DataProcessingException extends RuntimeException {
         super(msg);
     }
 
-    public static class FileProcesser {
+    public static class FileProcess0r {
         public void processFile(String filename) {
             try {
                 FileReader file = new FileReader(filename);

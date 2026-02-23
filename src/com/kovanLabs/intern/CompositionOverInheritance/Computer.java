@@ -53,7 +53,7 @@ public class Computer {
     public void upgrade(Ram newRam) {
         if (newRam.getSize() > this.ram.getSize()) {
             this.ram = newRam;
-            System.out.println("Ram ugraded to : " + newRam.getSize());
+            System.out.println("Ram upgraded to : " + newRam.getSize());
         } else {
             System.out.println("upgraded fails");
         }
