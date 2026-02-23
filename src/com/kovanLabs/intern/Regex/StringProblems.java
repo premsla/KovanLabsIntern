@@ -1,8 +1,7 @@
-package com.kovanLabs.intern.StringManipulation;
-
+package com.kovanLabs.intern.Regex;
 public class StringProblems {
     public static void main(String[] args) {
-        StringBuffer sb = new StringBuffer("Java");
+        StringBuilder sb = new StringBuilder("Java");
         System.out.println("Initial value : " + sb);
         sb.append(" Programming");
         System.out.println("After append : " + sb);
