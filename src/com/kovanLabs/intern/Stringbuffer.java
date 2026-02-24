@@ -12,7 +12,8 @@ class MyThread extends Thread {
               sb.append(Thread.currentThread().getName() + "\n");
             try {
                 Thread.sleep(100);
-            } catch (Exception e) {
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
             }
         }
     }
