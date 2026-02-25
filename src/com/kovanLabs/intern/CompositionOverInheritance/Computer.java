@@ -8,7 +8,6 @@ class Processor {
         this.brand = brand;
         this.core = core;
     }
-
     public String getDetails() {
         return String.format("%s %d cores", brand, core);
     }
