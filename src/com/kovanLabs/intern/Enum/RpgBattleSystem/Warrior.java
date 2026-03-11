@@ -1,7 +1,7 @@
 package com.kovanLabs.intern.Enum.RpgBattleSystem;
 public class Warrior extends Character {
     public Warrior(String name) {
-        super(name, 150, 20); // High health
+        super(name, 150, 20);
     }
     @Override
     public void attack(Character opponent) {
