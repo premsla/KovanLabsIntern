@@ -31,7 +31,7 @@ public class ArraysLinkedList {
         HashMap<Person, String> map = new HashMap<>();
         Person p1 = new Person(101, "Premalatha");
         Person p2 = new Person(101, "Prem");
-        map.put(p1, "Employee");
+        map.put(p2, "Employee");
         System.out.println("Equals result: " + p1.equals(p2));
         System.out.println("Value from map: " + map.get(p2));
     }
